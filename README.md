@@ -6,6 +6,8 @@ This is a backend exercise for Fetch, where I used Java Spring boot to allow use
 
 ## How to use
 
+Download or clone this repository.
+
 Navigate to receipts > src/main/java > ReceiptsApplication and run the application.
 Here you should see a "Tomcat started on port {port number}." Using that port number, go to your local web browser
 and type in localhost:{port number}/receipts/process. 
