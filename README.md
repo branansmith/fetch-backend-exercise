@@ -1,6 +1,6 @@
 # fetch-backend-exercise
 
-## created by Branan Smith
+### created by Branan Smith
 
 This is a backend exercise for Fetch, where I used Java Spring boot to allow users to input a receipt in the form of a JSON file. After a receipt is submitted, an id is returned. For each receipt, points are accumulated based on certain criteria, and using this id, you can view the points for that particular receipt.
 
