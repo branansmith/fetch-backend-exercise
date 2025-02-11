@@ -118,27 +118,22 @@ public class FileSystemStorageService implements StorageService {
 		
 		for (int i = 0; i < retailer.length(); ++i) {
 			if (Character.isDigit(retailer.charAt(i)) || Character.isLetter(retailer.charAt(i))) {
-				System.out.println("added 1 point for retailer");
 				points++;
 			}
 		}
 		
 		String total = jsonString.getString("total");
 		if (total.charAt(total.length() - 1) == '0' && total.charAt(total.length() - 2) == '0') {
-			System.out.println("added 50 points for total");
 			points += 50;
 		}
 		
 		if (Double.valueOf(total) % 0.25 == 0) {
-			System.out.println("Added 25 points for total");
 			points += 25;
 		}
 		
 		
 		String purchaseDate = jsonString.getString("purchaseDate");
-		System.out.println(purchaseDate.charAt(purchaseDate.length() - 1));
 		if (purchaseDate.charAt(purchaseDate.length() - 1) % 2 != 0) {
-			System.out.println("Added 6 points for purchase date");
 			points += 6;
 		}
 		
@@ -152,7 +147,6 @@ public class FileSystemStorageService implements StorageService {
 		parsedTime += purchaseTime.charAt(4);
 		
 		if (Integer.valueOf(parsedTime) >= 1400 && Integer.valueOf(parsedTime) <= 1600) {
-			System.out.println("Added 10 points for time");
 			points += 10;
 		}
 		
